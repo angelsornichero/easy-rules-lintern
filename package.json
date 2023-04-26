@@ -1,7 +1,7 @@
 {
   
     "name": "easy-rules-lintern",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "description": "This is an easy pack of rules for eslint",
     "scripts": {
       "lint": "eslint ."
@@ -30,6 +30,7 @@
     "license": "MIT",
     "dependencies": {
       "eslint": "8.39.0",
-      "eslint-plugin-react": "7.32.2"
+      "eslint-plugin-react": "7.32.2",
+      "eslint-config-easy-rules": "1.0.2"
     }
 }

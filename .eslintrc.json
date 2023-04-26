@@ -1,3 +1,82 @@
 {
-    "extends": "./node_modules/eslint-config-easy-rules/.eslintrc.json"
+    "env": {
+        "es2021": true,
+        "node": true,
+        "browser": true 
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2022,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "no-var": "warn",
+        "no-const-assign": "warn",
+        "react/react-in-jsx-scope": "off",
+        "no-class-assign": "error",
+        "no-debugger": "error",
+        "no-trailing-spaces": "error",
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "arrow-spacing": [
+            "error",
+            { "before": true, "after": true }
+        ],
+        "comma-spacing": [
+            "error",
+            { "before": false, "after": true  }
+        ],
+        "func-call-spacing": ["error", "never"],
+        "jsx-quotes": ["warn", "prefer-double"],
+        "line-comment-position": ["error", { "position": "beside" }],
+        "camelcase": ["error", { "properties": "always" }],
+        "no-empty-function": "warn",
+        "no-return-await": "error",
+        "max-params": ["error", 2],
+        "space-before-function-paren": ["error", "never"],
+        "key-spacing": ["error", { "beforeColon": false }],
+        "new-parens": "error",
+        "no-array-constructor": "error",
+        "no-constant-condition": "error",
+        "no-multi-spaces": "error",
+        "no-duplicate-imports": "error",
+        "no-duplicate-case": "error",
+        "no-eval": "error",
+        "no-mixed-spaces-and-tabs": "error",
+        "no-multiple-empty-lines": ["error", { "max": 2 }],
+        "semi-spacing": "error",
+        "template-curly-spacing": "error",
+        "no-unreachable": "error",
+        "no-alert": "error",
+        "eol-last": ["error", "always"]
+    }
 }
